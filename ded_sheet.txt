@@ -1,0 +1,72 @@
+==================== CHARACTER SUMMARY ====================
+Name: ded
+Level: 1   Proficiency Bonus: +2
+
+Race: Aarakocra
+Speed: 25
+
+Class: Barbarian (Path of the Berserker)
+Hit Die: d12
+
+Background: Archaeologist [Common]
+
+Ability Scores:
+  STR: 17 (+3)
+  DEX: 15 (+2)
+  CON: 13 (+1)
+  INT: 12 (+1)
+  WIS: 10 (+0)
+  CHA: 8 (-1)
+
+COMBAT
+AC: 12   Initiative: +2   Speed: 25
+HP: 13/13   Temp HP: 0   Hit Dice: 1d12
+
+ATTACKS
+ - Greataxe | To Hit: +5 | Damage: 1d12+3  [martial, heavy, two-handed]
+ - Handaxe | To Hit: +5 | Damage: 1d6+3  [simple, light, thrown, range 20/60]
+
+EQUIPMENT
+ - Greataxe
+ - Handaxe x2
+ - (Background equipment not filled for this background yet)
+
+SAVING THROWS
+ STR: +5 (prof)
+ DEX: +2
+ CON: +3 (prof)
+ INT: +1
+ WIS: +0
+ CHA: -1
+
+SKILLS
+ Acrobatics (DEX): +2
+ Animal Handling (WIS): +0
+ Arcana (INT): +1
+ Athletics (STR): +5 (prof)
+ Deception (CHA): -1
+ History (INT): +1
+ Insight (WIS): +0
+ Intimidation (CHA): +1 (prof)
+ Investigation (INT): +1
+ Medicine (WIS): +0
+ Nature (INT): +1
+ Perception (WIS): +0
+ Performance (CHA): -1
+ Persuasion (CHA): -1
+ Religion (INT): +1
+ Sleight of Hand (DEX): +2
+ Stealth (DEX): +2
+ Survival (WIS): +0
+
+Passive Perception: 10   Passive Insight: 10   Passive Investigation: 11
+
+RACE TRAITS
+ - Flexible ASI: Choose +2/+1 or +1/+1/+1 to abilities.
+ - Flight: You have a flying speed (see table rules/restrictions).
+ - Talons: Natural weapon option.
+
+CLASS FEATURES (Level 1)
+ - Rage: Bonus action to rage; gain benefits (PHB).
+ - Unarmored Defense: AC = 10 + DEX mod + CON mod when unarmored (PHB).
+===========================================================
