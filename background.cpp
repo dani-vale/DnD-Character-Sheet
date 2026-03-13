@@ -109,37 +109,129 @@ static std::vector<BackgroundDef>& defs() {
     add({n, src, {}, {}, {}, {"", ""}});
   };
 
-  addSimple("Anthropologist","Common");
-  addSimple("Archaeologist","Common");
-  addSimple("Athlete","Common");
-  addSimple("City Watch","Common");
-  addSimple("Clan Crafter","Common");
-  addSimple("Cloistered Scholar","Common");
-  addSimple("Courtier","Common");
-  addSimple("Faceless","Common");
-  addSimple("Faction Agent","Common");
-  addSimple("Far Traveler","Common");
-  addSimple("Feylost","Common");
-  addSimple("Fisher","Common");
-  addSimple("Giant Foundling","Common");
-  addSimple("Gladiator","Common");
-  addSimple("Guild Merchant","Common");
-  addSimple("Haunted One","Common");
-  addSimple("House Agent","Common");
-  addSimple("Inheritor","Common");
-  addSimple("Investigator (SCAG)","SCAG");
-  addSimple("Investigator (VRGR)","VRGR");
-  addSimple("Knight","Common");
-  addSimple("Knight of the Order","Common");
-  addSimple("Marine","Common");
-  addSimple("Mercenary Veteran","Common");
-  addSimple("Pirate","Common");
-  addSimple("Rewarded","Common");
-  addSimple("Ruined","Common");
-  addSimple("Rune Carver","Common");
-  addSimple("Shipwright","Common");
-  addSimple("Smuggler","Common");
-  addSimple("Spy","Common");
+  add({"Anthropologist","Common"
+      {"Insight", "Religion"}, {}, {"Two languages"},
+      {"Adept language","You can learn/speak languages you don't know."}});
+  
+  add({"Archaeologist","Common"
+    {"History", "Survival"}, {"Cartographer's tools", "Navagator's tools"}, {"One language"},
+    {"Historical Knowledge", "You know the purpose/builders of dungeons/ruins and the value of old art."}});
+    
+  add({"Athlete","Common"
+    {"Acrobatics", "Athletics"}, {"Vehicles (land)"}, {"One language"},
+    {"Echos of Victory", "Chance of finding a fan who will give information or shelter when near home town."}});
+  
+  add({"City Watch","Common"
+    {"Athletics", "Insight"}, {}, {"Two languages"},
+    {"Watcher's Eye", "You con find local outposts of the watch and criminal dens."}} );
+  
+  add({"Clan Crafter","Common"
+    {"History", "Insight"}, {"One artisan's tools"}, {"One language"},
+    {"Respect of the Stout Folk", "Sheild and gold dwarves give you free room and board."}});
+  
+  add({"Cloistered Scholar","Common"
+    {"History", "Arcana"}, {}, {"Two languages"},
+    {"Library Access", "You have access to the majority of the library and you have connections to your cloister."}});
+  
+  add({"Courtier","Common"
+    {"Insight", "Persuasion"}, {}, {"Two languages"},
+    {"Court Functionary", "You have access to the records and inner workings of any government."}});
+  
+  add({"Faceless","Common"
+    {"Deception", "Intimidation"}, {"Disguise kit"}, {"One language"},
+    {"Dual Personalities", "You can freely switch between your persona and your true self."}});
+  
+  addSimple({"Faction Agent","Common"
+    {"Insight", ""}, {}, {"Two languages"},
+    {"Safe Haven", "You know opratives who will give information, a safe house, or free room and board."}});
+  
+  add({"Far Traveler","Common"
+    {"Insight", "Persuasion"}, {"One musical instrument"}, {"One language"},
+    {"All Eyes on You", "Others notice you are foreign."}});
+  
+  add({"Feylost","Common"
+    {"Deception", "Survival"}, {"One musical instrument"}, {"One language"},
+    {"Feywild Connection", "Friendly Fey creatures are inclined to help you."}});
+  
+  add({"Fisher","Common"
+    {"History", "Survival"}, {}, {"One laguage"},
+    {"Harvest the Water", "You have advantage on fishing tackle and you can catch enough food for 11 people each day."}});
+  
+  add({"Giant Foundling","Common"
+    {"Intimidation", "Survival"}, {}, {"Two languages"},
+    {"Strike of the Giants", "You gain the Strike of the Giants feat."}});
+  
+  add({"Gladiator","Common"
+    {"Acrobatics", "Performance"}, {"One gaming set"}, {},
+    {"By popular Demand", "You can perform in combat for free lodging."}});
+  
+  add({"Guild Merchant","Common"
+    {"Insight", "Persuasion"}, {"One artisan's tools"}, {"One language"},
+    {"Guiild Membership", "You gain all the benefets of being a guild member, you must pay 5gp per month to the guild."}});
+  
+  add({"Haunted One","Common"
+    {"Arcana", "Investigation"}, {"Monster hunter's pack"}, {"Two languages"},
+    {"Heart of Darkness", "Commoners will help you to the utmost."}});
+  
+  add({"House Agent","Common"
+    {"Investigation", "Persuasion"}, {"One artisan's tools"}, {},
+    {"House Connection", "You can get provisions for yourself/others at house enclaves."}});
+  
+  add({"Inheritor","Common"
+    {"Survival", "History"}, {"Your Inheritance"}, {"One language"},
+    {"Inheritance", "Choose what your inheritance is (work with DM) you may keep it a secret."}});
+  
+  add({"Investigator (SCAG)","SCAG"
+    {"Insight", "Investigation"}, {}, {"Two languages"},
+    {"Watcher's Eye", "You know how to find local, legal, or criminal info, and can easily locate a city watch outpost."}});
+    
+  add({"Investigator (VRGR)","VRGR"
+    {"Insight", "Investigation"}, {"Magnifying glass"}, {},
+    {"Official Inquiry", "You can easily gain access to a place or person."}});
+    
+  add({"Knight","Common"
+    {"History", "Persuasion"}, {}, {"One language"},
+    {"Retainers", "You have the service of three retainers loyal to your family. They can leave."}});
+  
+  add({"Knight of the Order","Common"
+    {"Persuasion", "Religion"}, {}, {"One language"},
+    {"Knightly Regard", "You receive help from your order."}});
+  
+  add({"Marine","Common"
+    {"Athletics", "Survival"}, {"Dagger"}, {},
+    {"Steady", "You can move 16 hours each day without forced march. You can find a safe route for a boat to land on shore."}});
+  
+  add({"Mercenary Veteran","Common"
+    {"Athletics", "Persuasion"}, {"One gaming set"}, {},
+    {"Mercenary Life", "You can identify other mercenary companies and you can find mercenary work."}});
+  
+  add({"Pirate","Common"
+    {"Athletics", "Perception"}, {"Belaying pin", "50 ft rope"}, {},
+    {"Bad Reputation", "You can get away with minor crime."}});
+  
+  add({"Rewarded","Common"
+    {"Insight", "Persuasion"}, {"One gaming set"}, {"One language"},
+    {"Fourtune's Favor", "You gain the Lucky, Magic Initiate, or Skilled feat."}});
+  
+  add({"Ruined","Common"
+    {"Stealth", "Survival"}, {"One gaming set"}, {"One language"},
+    {"Still Standing", "You gain the Alert, Skilled, or Tough feat."}});
+  
+  add({"Rune Carver","Common"
+    {"History", "Perception"}, {"One artisan's tools"}, {"Giant"},
+    {"Rune Shaper", "You gain the Rune Shaper feat."}}); // incredibly inventive name
+  
+  add({"Shipwright","Common"
+    {"History", "Perception"}, {"Carpenter's tools"}, {},
+    {"I'll Patch It!", "You can repair water vehicles with carpenter's tools."}});
+
+  add({"Smuggler","Common"
+    {"Athletics", "Deception"}, {}, {},
+    {"Down Low", "You are connected with smugglers and you can stay in a safe house for free."}});
+  
+  add({"Spy","Common"
+    {"Dception", "Stealth"}, {"Crowbar"}, {},
+    {"Criminal Contact", "You have a connection to a network of other criminals."}});
 
   // ===================== AL: CURSE OF STRAHD =====================
   addSimple("Black Fist Double Agent","AL: Curse of Strahd");
