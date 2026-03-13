@@ -320,36 +320,36 @@ public: \
 
 MAKE_SUBCLASS2(Druid_Land, Druid_Base, "Circle of the Land",
   ClassFeature{"Bonus Cantrip", "Gain an extra druid cantrip."},
-  ClassFeature{"Natural Recovery", "Recover spell slots on short rest (limited)."}
+  ClassFeature{"Natural Recovery", "Recover spell slots on short rest (spell slots can have a combined level equal to or less than half the druid's level). Can't be used again until long rest."}
 )
 
 MAKE_SUBCLASS2(Druid_Moon, Druid_Base, "Circle of the Moon",
-  ClassFeature{"Combat Wild Shape", "Wild Shape as bonus action; heal while shifted."},
+  ClassFeature{"Combat Wild Shape", "Wild Shape as bonus action; heal 1d8 hp per level of spell slot while shifted."},
   ClassFeature{"Circle Forms", "Access stronger beast forms earlier."}
 )
 
 // Outside PHB circles (still start at 2)
 MAKE_SUBCLASS2(Druid_Dreams, Druid_Base, "Circle of Dreams",
-  ClassFeature{"Balm of the Summer Court", "Healing pool with bonus temp HP/mobility vibe."}
+  ClassFeature{"Balm of the Summer Court", "Healing pool with bonus temp HP (number of d6s equal to your druid level)/mobility vibe. And a reaction to heal an ally within 120 ft with it. Recovery on a long rest."},
 )
 
 MAKE_SUBCLASS2(Druid_Shepherd, Druid_Base, "Circle of the Shepherd",
-  ClassFeature{"Speech of the Woods", "Talk with beasts; improved interaction."},
-  ClassFeature{"Spirit Totem", "Summon a spirit aura to buff allies."}
+  ClassFeature{"Speech of the Woods", "Learn Sylvan. Communicate with beasts."},
+  ClassFeature{"Spirit Totem", "Bonus action to summon a spirit totem within 60 ft of you with an aura in a 30 ft radius that grants benefits (bear/eagle/wolf options). Spirit remains for 1 minute or until you dismiss it as a bonus action. Once you use this feature, you can't use it again until you finish a short or long rest. Effect of spirit depends on the chosen option."}
 )
 
 MAKE_SUBCLASS2(Druid_Spores, Druid_Base, "Circle of Spores",
-  ClassFeature{"Halo of Spores", "Reaction damage aura-style feature."},
-  ClassFeature{"Symbiotic Entity", "Combat mode: temp HP + melee/halo improvements."}
+  ClassFeature{"Halo of Spores", "When a creature you can see moves into a 10 ft radius around you or starts its turn there, you can use your reaction to deal necrotic damage (1d4 + Int mod, scaling with level) unless it succeeds on a Constitution save."},
+  ClassFeature{"Symbiotic Entity", "Expend a use of Wild Shape to gain 4 temp hp per druid level. While active, when you deal Halo of Spores damage, roll damage die a second time and add it to the total and melee attacks deal extra 1d6 necrotic damage."}
 )
 
 MAKE_SUBCLASS2(Druid_Stars, Druid_Base, "Circle of Stars",
-  ClassFeature{"Star Map", "Special focus; guidance-style benefits."},
-  ClassFeature{"Starry Form", "Constellation form with combat/support modes."}
+  ClassFeature{"Star Map", "While holding a Star Map (spellcasting focus), you know Guidance cantirp, Guiding Bolt prepared, can cast Guiding Bolt without expending spell slot (number of times equal to proficiency bonus and all uses regained on long rest)."},
+  ClassFeature{"Starry Form", "As bonus action, expend a use of Wild Shape to take on a starry form for 10 minutes. Benefits depend on form choice: Archer, Chalice, or Dragon."}
 )
 
 MAKE_SUBCLASS2(Druid_Wildfire, Druid_Base, "Circle of Wildfire",
-  ClassFeature{"Summon Wildfire Spirit", "Summon a spirit companion for utility/combat."}
+  ClassFeature{"Summon Wildfire Spirit", "Summon spirit companion. Any creature within 10 ft of the spirit when it appears must succeed on a Dexterity save or take 2d6 fire damage."}
 )
 
 MAKE_SUBCLASS1(Cleric_Knowledge, Cleric_Base, "Knowledge Domain",
