@@ -31,7 +31,7 @@ public:
 
   std::vector<ClassFeature> level1Features() {
     return {
-      {"Rage", "Bonus action to rage; gain benefits (PHB)."},
+      {"Rage", "Bonus action to rage; advantage on strength checks and saves; melee attacks using strength gain bonus to damage; resistance to bludgeoning, piercing, and slashing damage."},
       {"Unarmored Defense", "AC = 10 + DEX mod + CON mod when unarmored (PHB)."}
     };
   }
@@ -46,7 +46,7 @@ public:
 
   std::vector<Ability> savingThrowProficiencies() { return {Ability::DEX, Ability::CHA}; }
   std::vector<ArmorProf> armorProficiencies() { return {ArmorProf::Light}; }
-  std::vector<WeaponProf> weaponProficiencies() { return {WeaponProf::Simple}; }
+  std::vector<WeaponProf> weaponProficiencies() { return {WeaponProf::Simple, WeaponProf::HandCrossbow, WeaponProf::Longsword, WeaponProf::Rapier, WeaponProf::Shortsword}; }
 
   std::vector<std::string> skillOptions() {
     return {"Acrobatics","Animal Handling","Arcana","Athletics","Deception","History",
@@ -57,7 +57,7 @@ public:
 
   std::vector<ClassFeature> level1Features() {
     return {{"Spellcasting", "Cast bard spells using Charisma."},
-            {"Bardic Inspiration", "Bonus action: grant inspiration (PHB)."}};
+            {"Bardic Inspiration", "Bonus action: Creature of choice can roll 1d6 and add it to an ability check, attack roll, or saving throw."}};
   }
   std::vector<ClassFeature> subclassFeatures() { return {}; }
 };
@@ -123,7 +123,7 @@ public:
 
   std::vector<ClassFeature> level1Features() {
     return {{"Fighting Style", "Choose a Fighting Style."},
-            {"Second Wind", "Bonus action heal (PHB)."}};
+            {"Second Wind", "Bonus action heal 1d10 + fighter level."}};
   }
   std::vector<ClassFeature> subclassFeatures() { return {}; }
 };
@@ -136,14 +136,14 @@ public:
 
   std::vector<Ability> savingThrowProficiencies() { return {Ability::STR, Ability::DEX}; }
   std::vector<ArmorProf> armorProficiencies() { return {}; }
-  std::vector<WeaponProf> weaponProficiencies() { return {WeaponProf::Simple}; }
+  std::vector<WeaponProf> weaponProficiencies() { return {WeaponProf::Simple, WeaponProf::Shortsword}; }
 
   std::vector<std::string> skillOptions() { return {"Acrobatics","Athletics","History","Insight","Religion","Stealth"}; }
   int numberOfSkillChoices() { return 2; }
 
   std::vector<ClassFeature> level1Features() {
     return {{"Unarmored Defense", "AC = 10 + DEX mod + WIS mod (PHB)."},
-            {"Martial Arts", "Monk unarmed/weapon rules (PHB)."}};
+            {"Martial Arts", "Monk unarmed/weapon benefits (PHB)."}};
   }
   std::vector<ClassFeature> subclassFeatures() { return {}; }
 };
@@ -164,7 +164,7 @@ public:
   int numberOfSkillChoices() { return 2; }
 
   std::vector<ClassFeature> level1Features() {
-    return {{"Divine Sense", "Detect certain creatures (PHB)."},
+    return {{"Divine Sense", "Detect celestial, fiend, or undead within 60 feet."},
             {"Lay on Hands", "Healing pool (PHB)."}};
   }
   std::vector<ClassFeature> subclassFeatures() { return {}; }
@@ -186,8 +186,8 @@ public:
   int numberOfSkillChoices() { return 3; }
 
   std::vector<ClassFeature> level1Features() {
-    return {{"Favored Enemy", "Choose favored enemy (PHB)."},
-            {"Natural Explorer", "Choose favored terrain (PHB)."}};
+    return {{"Favored Enemy", "Choose favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, undead. Advantage on survival checks to track them and intelligence checks to recall information about them."},
+            {"Natural Explorer", "Choose favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, Underdark."}};
   }
   std::vector<ClassFeature> subclassFeatures() { return {}; }
 };
@@ -200,7 +200,7 @@ public:
 
   std::vector<Ability> savingThrowProficiencies() { return {Ability::DEX, Ability::INT}; }
   std::vector<ArmorProf> armorProficiencies() { return {ArmorProf::Light}; }
-  std::vector<WeaponProf> weaponProficiencies() { return {WeaponProf::Simple}; }
+  std::vector<WeaponProf> weaponProficiencies() { return {WeaponProf::Simple, WeaponProf::HandCrossbow, WeaponProf::Longsword, WeaponProf::Rapier, WeaponProf::Shortsword}; }
 
   std::vector<std::string> skillOptions() {
     return {"Acrobatics","Athletics","Deception","Insight","Intimidation","Investigation",
